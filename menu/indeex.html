@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Menu</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+        
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav style="font-size: 1.15rem; "
+                class="navbar navbar-expand-sm navbar-light bg-light"
+            >
+                <div class="container" >
+                    <a class="navbar-brand" style="color:red;font-size: 2.8rem; font-weight: bold;"  href="#">  manu</a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        style="background-color: white;" 
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        
+                    >
+                        <span class="navbar-toggler-icon" style="background-color:white" ></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active " style="color: white;"  href="#" aria-current="page"
+                                    ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABbElEQVRIS+WVwW3CMBSGbdxDFB9oJLizQZMJSiZoN6DdgA1KN2CDwgZs0GxARug9SCkHWznUuL8jUiXBpIGSSlWRcoD8ed//v/ccKOn4QzuuT/4ZYMO5Ni0dCNE6eWuhKdwJIHGcMe31JrDuU0p9A9Jax3AW691uOcyyqGlRjiZIHWekGHvBw+NvNi1iSj16WfZm01kBKee+IuQVD1zj2sLx/IrSlSdEbIqY+x9a3yPRFF/7uN4ZIWFxvww6AOydr/PiWi+ZlFMPBWzuUmiU684JpZMcolRQT3IASDiP8OOtKT6Q8qHNQdy47gqQO2gjbFh4NEE+UMZMa7ZMiNEx53VonoRzM4O+ViosD76SAE4WJi56/jyUctbGfaFJXHeGmTzVk1cAEMUQ3WBggW1gTcD9YqzNCsNcUGirCc44qWWo7SBaAae0xqYtv0p+F/BT540nuejfpSBFm75a1DngUs7rdU76PzjHxN8HfALLupUZ9CQdjQAAAABJRU5ErkJggg=="/> Breakfast
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: white;"  href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA+UlEQVRIS7WV3Q2CMBCAjzdCH8TAHjqSjuAGOoFuoE4iI+gGDmCCLxQehNoSMEJb+ksTXkj5vrtr7whg5hXMzAdnQQ4QQxiuoKoeS4D3OGAnwQuhDQUe6RMzcEDIPsH48C+xFnTwMxdx0+ySsjz1760EMngH3aZFcbEWTMIJuaYYs7L9llEGpvD2XHSvqQ1cW2AL1xK4wJUC1kQ1Qk+6ccGVUnCgonIrzyBHaF0DZAOJJlyZQR/RoEwGcC1Bl8GtHQeGcKXAFT4p8AGXCnzBhQKfcE7gG84L6E35RFFGm+M+noq6M2u8j2s01r2iX583gS1I9p1yVLgKv4+kihnu5mcHAAAAAElFTkSuQmCC"/> Lunch</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: white;"  href="Hot Drink"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABeElEQVRIS72VQVbCMBCGE3bSLPQE6tKyEE4gnkC8iZ7AcgK9CXgC9QTWBXUpnkAXKe6If5DxJaVJmj6gG968TOabycw/cLbjj+84PqsFFEIoDU6lXJ2HbF+SXsCBlEenjH0TwGVHA2ZCTEG+QhnjnpRZyI4GvAsxRPAnfRGgS/3rs8+kfHZBnE1G1hkO7xD4EVWMQnY04IOxwx8hvqjZITsa0GR6qtNVB9mfDmZJknPOz7chPKVU3ivLwXpI/kJSudsAmCL9fyIA9KhdgD4APW8Dwiv08QqvuPuCLTC0KiAxMaVu07J8aAMokuSGcX5Po20/Ubc7Yp3OBIA5ANgQ8R8AcwCO2XJ5nS4WUwuw6gM5tKiCskeCn0jwhNKzxrSgKvSpkUWoFvOeXi3m6tjQAa2EdXkZnMc+gOlPy9H0rxWadcmY6SrI1E5d8I0emAHMjUp/PFUAaaf6LMEKyKGp+FwJeCvQh03WB4T5BmH2XX3a37ILjWLb819rvOEZzs+kTwAAAABJRU5ErkJggg=="/> Hot Drink</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: white;"  href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA2UlEQVRIS+2UTQ6DIBBGmbikepXqCduesHgVLUtDoSkGEWaGKF2VxJjIz+N7A4Ko3KDy+uK3AN22SgBcD6ZScpoGv8YmwSkAY0Y5z30S8JKyh6Z5uk6zLMNFa8VJg83b1UB33d0uerPPJioGCpI/rB43f23JImMTYtC6oUhNUpH/GEbmKMKUZo9poIrD2KlBE/hO1qnKqGEBOKqo00beZEJVVg0rAaqKUFMESKmi1BQB3OBIFammGPCFGPe2t5Ws3R9wniJb3I/3XKPqQe6kOoDzp8PGkAmOAt6or38Z/yeM2QAAAABJRU5ErkJggg=="/> Soft Drink</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: white;"  href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABxUlEQVRIS7VU7W3CMBC1gxRREqftBM0GpRM0TNB2gtIJWiaADaATFCYoGzTdIJ2gGQHlAxASuM9WQfkwSYyE/0TKnd+79+7OlJz50DPjk5MIVu22y03zgXPucUKuABLi69txPCsWrEUgwFLbHlLDeDuiPOhEUQ+gi31ciyBlbEoofa6xNbCi6E6LQFZuWa6VpuGSMR8kt5UknD9ZcTwXObUKBPjScb7wdcl222tCwne7dztJpI21BLDlERV/imSQLJqQoPnfaLhXSSArZ8wTUhPG+pTSjxKJ4wT4d1Oyi/MZ7vWPEuxtQUIX1bygmmmRBNIniI9UvUBsgGkScbVFiWV1SavlI/FSVq0gqWoywK/3o5rrwb8t404cD8TUqEjqRjXb4JKCxLYnWKJXBOTCFEkgReyB9FZ5OP9BcZ5y0cT670zzN3NRTaIBnlOAWX+DRePCfUkiYvg/1Kl8n3voQYW3IZLdU8BzCjCGPmb9vmo6SjGF58Wcg4JMg5txNADPKcg+CbUMDcHLY9rEJg3wEoF8lhmbH+uFWCIrSUbZOa9Tq3xNV7btbQkRr2gXyxUYhhHSzWZ+sV6LidI6tc+1Fpoi+ewEf7Cb+Rmcp6/HAAAAAElFTkSuQmCC"/> Extra</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: white;"  href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAuElEQVRIS2NkoDFgpLH5DKMWEAxheBB95eP7z/D//wKuz58LgYIfQDr/MzAIfOPl7WdgZEwAm0SiPEgLqgUQ91xg+vUrEMT4x8a2HkgZoDmTKHnOHz8eoFjwnYND4R8r6waga/VRDPz//yLT798BYAtJkOf+9AnseJRUBA2SCUBL4qFBshAYZAVoQUaUPFYLCMYYGQpGIxmUdLEmgtFIJiqnj+ZkUArCmdPpn5PJKAWI0jJaZRIMJgDw/QIo9ZfMkwAAAABJRU5ErkJggg=="/> Water</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown" >
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    style="color: white;" >Dropdown</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href="#"
+                                    >Action 1</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Action 2</a
+                                    >
+                                </div>
+                            </li> -->
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            <input
+                                class="form-control me-sm-2"
+                                type="text"
+                                placeholder="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success my-2 my-sm-0"
+                                type="submit"
+                                style="color: white;"  >
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            
+            <bs5-h1 class="Breakfast" style="display: flex; font-size: 2.5rem;justify-content: center;
+          font-weight: bold; color: red; " > Breakfast</bs5-h1>
+            <div class="card-group" style="margin-top: 8vh;">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Dulet</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">200birr<samp style="margin: 5px;">$5</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Feta Normal</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">300birr<samp style="margin: 5px;">$6</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--=============================================================== -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/3.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Omelete Egg</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">170birr<samp style="margin: 5px;">$3.5</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/4.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Egg sandwich</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">150birr<samp style="margin: 5px;">$3</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- =============================================================== -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/5.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Poradge With </h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">350birr<samp style="margin: 5px;">$3.5</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/6.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Egg With Meat</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">170birr<samp style="margin: 5px;">$3.5</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ==================================================================== -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/7.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Irra diba Special</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">250birr<samp style="margin: 5px;">$5</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/8.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Genfo(merka)</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">300birr<samp style="margin: 5px;">$6</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ==================================================================== -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/9.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Irra Diba</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">200birr<samp style="margin: 5px;">$4</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/10.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Veg.Pasta</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">200birr<samp style="margin: 5px;">$20</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ======================================================================= -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/11.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Fata special</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">300birr<samp style="margin: 5px;">$6</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/12.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Ful special</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">250birr<samp style="margin: 5px;">$5</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ======================================================================= -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/13.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Normal Chechebsa</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">200birr<samp style="margin: 5px;">$4</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/14.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Special Chechebsa</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">300birr<samp style="margin: 5px;">$6</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--==========================================================================-->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/15.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Normal Foul</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">160birr<samp style="margin: 5px;">$3.5</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/16.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Omelete Egg</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">140birr<samp style="margin: 5px;">$2.5</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ========================================================================== -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/17.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Normal Pasta</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">130birr<samp style="margin: 5px;">$2.5</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/19.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Pasta With Meat</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">150birr<samp style="margin: 5px;">$3</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--========================================================================== -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/20.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Scramble Egg</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">150birr<samp style="margin: 5px;">$3</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/21.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Special Egg Sandwich</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">150birr<samp style="margin: 5px;">$3</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- =========================================================================== -->
+            <div class="card-group">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/22.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Special Chachebsa</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">300birr<samp style="margin: 5px;">$6</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/23.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white">Sudanese Foul</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">250birr<samp style="margin: 5px;">$5</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--==============================Hot Drink============================================ -->
+            <bs5-h1 class="Hot Drink" style="display: flex; font-size: 2.5rem;justify-content: center;
+            font-weight: bold; color: red;  background-color: white; height: 10vh; " >Hot Drink</bs5-h1>
+            <!--========================Hot Drink======================================= -->
+              <div class="card-group" style="margin-top: 8vh;">
+                  <div class="card" style="width: 40v;">
+                      <img
+                          class="card-img-top"
+                          src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                          alt="Card image cap"
+                      />
+                      <button class="btn" style="color: white;
+                      background-color: red;
+                       margin-top: 8vh;
+                      width: 13vh;
+                      height: 10vh;
+                      position:absolute;
+                      transform: translate(30vh);
+                      font-weight: bold;
+                      font-size: 1.5rem;">buy</button>
+                      <div class="card-body">
+                          <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Coffee</h4>
+                          <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">20birr<samp style="margin: 5px;">$0.4</samp></p>
+                      </div>
+  
+                  </div>
+                  
+                  <div class="card">
+                      <img
+                          class="card-img-top"
+                          src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                          alt="Card image cap"
+                      />
+                      <button class="btn" style="color: white;
+                      background-color: red;
+                       margin-top: 8vh;
+                      width: 13vh;
+                      height: 10vh;
+                      position:absolute;
+                      transform: translate(30vh);
+                      font-weight: bold;
+                      font-size: 1.5rem;">buy</button>
+                      <div class="card-body">
+                          <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Tea</h4>
+                          <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">20birr<samp style="margin: 5px;">$0.4</samp></p>
+                      </div>
+  
+                  </div>
+              </div>
+              <!--========================Hot Drink======================================= -->
+              <div class="card-group" style="margin-top: 8vh;">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Sprace</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">25birr<samp style="margin: 5px;">$0.5</samp></p>
+                    </div>
+  
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Special Tea</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">25birr<samp style="margin: 5px;">$0.5</samp></p>
+                    </div>
+  
+                </div>
+            </div>
+              <!--=========================Hot Drink===================================== -->
+              <div class="card-group" style="margin-top: 8vh;">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Qeshir Tea </h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">20birr<samp style="margin: 5px;">$0.4</samp></p>
+                    </div>
+  
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Orange Tea</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">35birr<samp style="margin: 5px;">$0.5</samp></p>
+                    </div>
+  
+                </div>
+            </div>
+            <!-- ================================Hot Drink================================ -->
+             <!--========================soft Drink======================================= -->
+            <bs5-h1 class="Soft Drink" style="display: flex; font-size: 2.5rem;justify-content: center;
+          font-weight: bold; color: red; background-color: white; height: 10vh; " >Soft Drink</bs5-h1>
+           <!--========================soft Drink======================================= -->
+            <div class="card-group" style="margin-top: 8vh;">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Coca</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Sprite</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--========================soft Drink======================================= -->
+            <div class="card-group" style="margin-top: 8vh;">
+              <div class="card" style="width: 40v;">
+                  <img
+                      class="card-img-top"
+                      src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                      alt="Card image cap"
+                  />
+                  <button class="btn" style="color: white;
+                  background-color: red;
+                   margin-top: 8vh;
+                  width: 13vh;
+                  height: 10vh;
+                  position:absolute;
+                  transform: translate(30vh);
+                  font-weight: bold;
+                  font-size: 1.5rem;">buy</button>
+                  <div class="card-body">
+                      <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Fanta</h4>
+                      <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+                  </div>
+
+              </div>
+              
+              <div class="card">
+                  <img
+                      class="card-img-top"
+                      src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                      alt="Card image cap"
+                  />
+                  <button class="btn" style="color: white;
+                  background-color: red;
+                   margin-top: 8vh;
+                  width: 13vh;
+                  height: 10vh;
+                  position:absolute;
+                  transform: translate(30vh);
+                  font-weight: bold;
+                  font-size: 1.5rem;">buy</button>
+                  <div class="card-body">
+                      <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Ambo</h4>
+                      <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+                  </div>
+
+              </div>
+          </div>
+            <!--=========================soft Drink===================================== -->
+            <div class="card-group" style="margin-top: 8vh;">
+              <div class="card" style="width: 40v;">
+                  <img
+                      class="card-img-top"
+                      src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                      alt="Card image cap"
+                  />
+                  <button class="btn" style="color: white;
+                  background-color: red;
+                   margin-top: 8vh;
+                  width: 13vh;
+                  height: 10vh;
+                  position:absolute;
+                  transform: translate(30vh);
+                  font-weight: bold;
+                  font-size: 1.5rem;">buy</button>
+                  <div class="card-body">
+                      <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Fanta</h4>
+                      <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+                  </div>
+
+              </div>
+              
+              <div class="card">
+                  <img
+                      class="card-img-top"
+                      src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                      alt="Card image cap"
+                  />
+                  <button class="btn" style="color: white;
+                  background-color: red;
+                   margin-top: 8vh;
+                  width: 13vh;
+                  height: 10vh;
+                  position:absolute;
+                  transform: translate(30vh);
+                  font-weight: bold;
+                  font-size: 1.5rem;">buy</button>
+                  <div class="card-body">
+                      <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Ambo</h4>
+                      <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+                  </div>
+
+              </div>
+          </div>
+      <!--========================soft Drink======================================= -->
+            <div class="card-group" style="margin-top: 8vh;">
+  <div class="card" style="width: 40v;">
+      <img
+          class="card-img-top"
+          src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+          alt="Card image cap"
+      />
+      <button class="btn" style="color: white;
+      background-color: red;
+       margin-top: 8vh;
+      width: 13vh;
+      height: 10vh;
+      position:absolute;
+      transform: translate(30vh);
+      font-weight: bold;
+      font-size: 1.5rem;">buy</button>
+      <div class="card-body">
+          <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Fanta</h4>
+          <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+      </div>
+
+  </div>
+  
+  <div class="card">
+      <img
+          class="card-img-top"
+          src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+          alt="Card image cap"
+      />
+      <button class="btn" style="color: white;
+      background-color: red;
+       margin-top: 8vh;
+      width: 13vh;
+      height: 10vh;
+      position:absolute;
+      transform: translate(30vh);
+      font-weight: bold;
+      font-size: 1.5rem;">buy</button>
+      <div class="card-body">
+          <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Ambo</h4>
+          <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+      </div>
+
+  </div>
+            </div>
+        <!--========================soft Drink======================================= -->
+        <!--==============================Extra======================================= -->
+            <bs5-h1 class="Extra" style="display: flex; font-size: 2.5rem;justify-content: center;
+            font-weight: bold; color: red; background-color: white; height: 10vh; " >Extra</bs5-h1>
+            <!--========================Extra======================================= -->
+            <div class="card-group" style="margin-top: 8vh;">
+               <div class="card" style="width: 40v;">
+                   <img
+                       class="card-img-top"
+                       src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                       alt="Card image cap"
+                   />
+                   <button class="btn" style="color: white;
+                   background-color: red;
+                 margin-top: 8vh;
+                   width: 13vh;
+                   height: 10vh;
+                   position:absolute;
+                   transform: translate(30vh);
+                   font-weight: bold;
+                   font-size: 1.5rem;">buy</button>
+                   <div class="card-body">
+                       <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Enjera</h4>
+                       <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">20birr<samp style="margin: 5px;">$0.4</samp></p>
+                   </div>
+               </div>
+               
+               <div class="card">
+                   <img
+                       class="card-img-top"
+                       src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                       alt="Card image cap"
+                   />
+                   <button class="btn" style="color: white;
+                   background-color: red;
+                   margin-top: 8vh;
+                   width: 13vh;
+                   height: 10vh;
+                   position:absolute;
+                   transform: translate(30vh);
+                   font-weight: bold;
+                   font-size: 1.5rem;">buy</button>
+                   <div class="card-body">
+                       <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Full Enjera</h4>
+                       <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">30birr<samp style="margin: 5px;">$0.5</samp></p>
+                   </div>
+               </div>
+            </div>
+            <!--========================Extra======================================= -->
+            <div class="card-group" style="margin-top: 8vh;">
+             <div class="card" style="width: 40v;">
+                 <img
+                     class="card-img-top"
+                     src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                     alt="Card image cap"
+                 />
+                 <button class="btn" style="color: white;
+                 background-color: red;
+                  margin-top: 8vh;
+                 width: 13vh;
+                 height: 10vh;
+                 position:absolute;
+                 transform: translate(30vh);
+                 font-weight: bold;
+                 font-size: 1.5rem;">buy</button>
+                 <div class="card-body">
+                     <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">Bread</h4>
+                     <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">15birr<samp style="margin: 5px;">$0.3</samp></p>
+                 </div>
+
+             </div>
+             
+             <div class="card">
+                 <img
+                     class="card-img-top"
+                     src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                     alt="Card image cap"
+                 />
+                 <button class="btn" style="color: white;
+                 background-color: red;
+                  margin-top: 8vh;
+                 width: 13vh;
+                 height: 10vh;
+                 position:absolute;
+                 transform: translate(30vh);
+                 font-weight: bold;
+                 font-size: 1.5rem;">buy</button>
+                 <div class="card-body">
+                     <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">Ergo</h4>
+                     <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">40birr<samp style="margin: 5px;">$0.6</samp></p>
+                 </div>
+
+             </div>
+            </div>
+            <!--========================Extra======================================= -->
+            <!--=========================water===================================== -->
+            <bs5-h1 class="Water" style="display: flex; font-size: 2.5rem;justify-content: center;
+            font-weight: bold; color: red; background-color: white; height: 10vh; " >Water</bs5-h1>
+            <!--========================water======================================= -->
+            <div class="card-group" style="margin-top: 8vh;">
+                  <div class="card" style="width: 40v;">
+                      <img
+                          class="card-img-top"
+                          src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                          alt="Card image cap"
+                      />
+                      <button class="btn" style="color: white;
+                      background-color: red;
+                       margin-top: 8vh;
+                      width: 13vh;
+                      height: 10vh;
+                      position:absolute;
+                      transform: translate(30vh);
+                      font-weight: bold;
+                      font-size: 1.5rem;">buy</button>
+                      <div class="card-body">
+                          <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">2L Water</h4>
+                          <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">30birr<samp style="margin: 5px;">$0.4</samp></p>
+                      </div>
+  
+                  </div>
+                  
+                  <div class="card">
+                      <img
+                          class="card-img-top"
+                          src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                          alt="Card image cap"
+                      />
+                      <button class="btn" style="color: white;
+                      background-color: red;
+                       margin-top: 8vh;
+                      width: 13vh;
+                      height: 10vh;
+                      position:absolute;
+                      transform: translate(30vh);
+                      font-weight: bold;
+                      font-size: 1.5rem;">buy</button>
+                      <div class="card-body">
+                          <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">1L Water</h4>
+                          <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">25birr<samp style="margin: 5px;">$0.3</samp></p>
+                      </div>
+  
+                  </div>
+            </div>
+            <!--========================water======================================= -->
+            <div class="card-group" style="margin-top: 8vh;">
+                <div class="card" style="width: 40v;">
+                    <img
+                        class="card-img-top"
+                        src="image/1.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh; color: white;">1/2L Water</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">15birr<samp style="margin: 5px;">$0.2</samp></p>
+                    </div>
+  
+                </div>
+                
+                <!-- <div class="card">
+                    <img
+                        class="card-img-top"
+                        src="image/2.jpg" style="border-color: red; border-radius:5px; height: 25vh; width: 25vh; margin: 5vh 0 0vh 2vh;"
+                        alt="Card image cap"
+                    />
+                    <button class="btn" style="color: white;
+                    background-color: red;
+                     margin-top: 8vh;
+                    width: 13vh;
+                    height: 10vh;
+                    position:absolute;
+                    transform: translate(30vh);
+                    font-weight: bold;
+                    font-size: 1.5rem;">buy</button>
+                    <div class="card-body">
+                        <h4 class="card-title" style="margin-left: 3vh; font-size: 1.5ram; width: 30vh;color: white ">2L Water</h4>
+                        <p class="card-text" style="margin-left: 5vh;color: red; width: 30vh">200birr<samp style="margin: 5px;">$20</samp></p>
+                    </div> -->
+  
+                </div>
+            </div>
+            <!--=========================water===================================== -->
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <bs5-footer style="display: flex; justify-content: center;font-weight: bold;"> © 2024, panda software solution. All Rights Reserved. </bs5-footer>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
